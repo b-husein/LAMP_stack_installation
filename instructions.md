@@ -79,9 +79,106 @@ $ sudo chown husein:husein -R ./
 <br>
 
 ### and now when we type ls -la; we can see that everything is own by 'husein' user;
+### and now we can open everything from terminal in VS code by using command: 
+<br>
 
+```
+$ code .
+```
+<br>
 
+### if we make some file right now and save it, it will be owned by www-data; 
+### so what we need to do is change settings on our local installation
+### by typing: 
+<br>
 
+```
+$ sudo gedit /etc/apache2/envvars
+```
+<br>
 
-[more about web development setup on Linux Ubuntu 20.04](https://www.google.com)
+### in this file, on lines 16 and 17 we can see:
+### APACHE_RUN_USER=www-data
+### APACHE_RUN_GROUP=www-data
+### and we should modify both so they are equal to our current user, for example:
+### APACHE_RUN_USER=husein
+### APACHE_RUN_GROUP=husein
+### after that we need to restart apache: 
+<br>
+
+```
+$ sudo service apache2 restart
+```
+<br>
+
+### now we will not have any permission issues while making some changes in our root folder.
+
+### 4. MySQL Installation: 
+<br>
+
+```
+$ sudo apt-get install mysql-server
+```
+<br>
+
+### we can confirm that it's installed by running: 
+<br>
+
+```
+$ sudo service mysql status
+```
+<br>
+
+### 5. PHPMyAdmin Installation: 
+<br>
+
+```
+$ sudo apt-get install phpmyadmin
+```
+<br>
+
+### on the following screen make sure to hit space in order to select apache2;
+### and after that just follow the instructions and type password; 
+### when the installation is finished, we just need to open our browser and type: 
+<br>
+
+```
+localhost/phpmyadmin/
+```
+<br>
+
+### and we should see the login page of phpmyadmin; We will not be able to login because 
+### we need to set the same password on mysql level, for this we will run: 
+<br>
+
+```
+$ sudo mysql
+```
+<br>
+
+### and here we can see mysql console where we can run:
+<br>
+
+```
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'yourPasswordHere';
+```
+<br>
+
+### hit ctrl + z to exit the console.
+### password that we enter above must match the password we enter within phpmyadmin installation.
+### when we open browser again and this time insert data and click 'Go', we will be able to login to phpmyadmin website.
+
+### 6. Install PHP extension in VS code
+
+### open VS code, and go to extensions and type 'php IntelliSense', after that just select 'Install'.
+
+### 7. Install Git via terminal: 
+<br>
+
+```
+$ sudo apt-get install git
+```
+<br>
+
+[more about web development setup on Linux Ubuntu 20.04](#)
 

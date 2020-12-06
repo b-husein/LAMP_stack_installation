@@ -1,5 +1,5 @@
 # Instructions 
-<br><br>
+<br>
 ## for Apache, PHP, MySQL and PHPMyAdmin installation on Ubuntu 20.04;
 
 ### 1. Apache2 Installation via terminal:
@@ -10,8 +10,7 @@ $ sudo apt-get install apache2
 ```
 <br>
 
-### as soon as we are done with installation we can type 'localhost' in the browser and we should
-### see the Apache2 Ubuntu Default Page; which means that installation was successful.
+#### as soon as we are done with installation we can type 'localhost' in the browser and we should see the Apache2 Ubuntu Default Page; which means that installation was successful.
 <br>
 
 ### 2. PHP installation via terminal: 
@@ -22,7 +21,7 @@ $ sudo apt-get install php libapache2-mod-php
 ```
 <br>
 
-### after installation we can type 
+#### after installation we can type 
 <br>
 
 ```
@@ -30,8 +29,7 @@ $ php -v
 ```
 <br>
 
-### in order to check the php version that was previously installed;
-### by default it should be the latest version.
+#### in order to check the php version that was previously installed, by default it should be the latest version.
 <br>
 
 ### 3. Navigate to root directory for localhost: 

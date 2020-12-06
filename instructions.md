@@ -6,8 +6,7 @@
 <br>
 
 ```
-sudo apt-get install apache2
-
+$ sudo apt-get install apache2
 ```
 
 [more about web development setup on Linux Ubuntu 20.04](https://www.google.com.hk/)

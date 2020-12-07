@@ -38,7 +38,7 @@ $ ls -la
 ```
 
 #### right here we can create index.php file; after creating index.php file, if we navigate to localhost in our web browser, we cannot see anything because in root directory we have index.html file;
-### and by default apache looks up for index.html first and index.php second, so what we need to do here is actually change this by opening dir.conf file: 
+#### and by default apache looks up for index.html first and index.php second, so what we need to do here is actually change this by opening dir.conf file: 
 <br>
 
 ```
@@ -145,6 +145,6 @@ $ sudo apt-get install git
 ```
 <br>
 
-[more about web development setup on Linux Ubuntu 20.04](#)
+[more about web development setup on Linux Ubuntu 20.04](#) <br>
 [list of basic Linux commands](https://linoxide.com/linux-command/essential-linux-basic-commands/)
 

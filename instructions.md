@@ -145,6 +145,18 @@ $ sudo apt-get install git
 ```
 <br>
 
+### 8. Starting up: 
+<br>
+
+```
+$ cd /var/www/html/
+$ ls -la 
+$ sudo service apache2 start 
+$ sudo service apache2 status
+$ sudo service apache2 stop
+```
+<br>
+
 [more about web development setup on Linux Ubuntu 20.04](#) <br>
 [list of basic Linux commands](https://linoxide.com/linux-command/essential-linux-basic-commands/)
 
